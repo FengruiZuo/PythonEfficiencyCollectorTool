@@ -22,11 +22,11 @@ Discovering your device's USB addresses:
 Connect computer to instrument via USB cable. 
 Open command prompt
 Type: 
-python3
-import pyvisa
-rm = pyvisa.ResourceManager()
-rm.list_resources()
-.... the list of connected instruments via VISA will be listed
+- python3
+- import pyvisa
+- rm = pyvisa.ResourceManager()
+- rm.list_resources()
+- .... the list of connected instruments via VISA will be listed
 The USB address of the instruments will be shown in the command prompt, find the one that you want to communicate with, and paste that address in the code where you will be estbalishing a connection with the instrument.  In the code example, it will be between line 42 to line 45, paste the address of your instrument there. 
 
 
